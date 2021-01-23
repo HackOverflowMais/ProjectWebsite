@@ -57,26 +57,14 @@ export default function Home({
                         Team HackOverflow
                     </Heading>
                     <HStack mt="10" spacing="4" justify="center">
-                        <Button
-                            bg="#ebf8ff"
-                            variant="ghost"
-                            colorScheme="blue"
-                            size={{ base: 'md', md: 'lg' }}>
+                        <Button bg="#ebf8ff" variant="ghost" colorScheme="blue" size="lg">
                             Covid Visualized
                         </Button>
 
-                        <Button
-                            bg="#E6FFFA"
-                            variant="ghost"
-                            colorScheme="teal"
-                            size={{ base: 'md', md: 'lg' }}>
+                        <Button bg="#E6FFFA" variant="ghost" colorScheme="teal" size="lg">
                             Lung Scans
                         </Button>
-                        <Button
-                            bg="#F0FFF4"
-                            variant="ghost"
-                            colorScheme="green"
-                            size={{ base: 'md', md: 'lg' }}>
+                        <Button bg="#F0FFF4" variant="ghost" colorScheme="green" size="lg">
                             Sentiment Analysis
                         </Button>
                     </HStack>
@@ -110,13 +98,15 @@ export default function Home({
                                 direction="column"
                                 p={5}>
                                 <Flex direction="row" marginBottom={3}>
-                                    <FiBook />
-                                    <a href={val.url} style={{ color: '#0363cf' }}>
-                                        <strong>
-                                            <Heading size="md" justifyContent="center">
-                                                {val.name}
-                                            </Heading>
-                                        </strong>
+                                    <FiBook style={{ marginTop: '0.25em' }} />
+                                    <a href={val.url} style={{ color: '#0363cf', marginLeft: '0.5em' }}>
+                                        <Heading
+                                            _hover={{ borderBottom: '2px' }}
+                                            fontWeight="bold"
+                                            size="md"
+                                            justifyContent="center">
+                                            {val.name}
+                                        </Heading>
                                     </a>
                                 </Flex>
                                 <Text marginY={3}>{val.description}</Text>
@@ -126,12 +116,14 @@ export default function Home({
                                             height: '12px',
                                             width: '12px',
                                             borderRadius: '50%',
+                                            marginTop: '0.30em',
+                                            marginRight: '0.5em',
                                             backgroundColor: val.primaryLanguage.color
                                         }}
                                     />
                                     <Text>{val.primaryLanguage.name}</Text>
-                                    <Flex ml={5}>
-                                        <FiStar />
+                                    <Flex ml={8}>
+                                        <FiStar style={{ marginTop: '0.25em', marginRight: '0.25em' }} />
                                         <Text>{val.stargazerCount}</Text>
                                     </Flex>
                                 </Flex>
