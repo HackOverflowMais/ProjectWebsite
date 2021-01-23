@@ -5,8 +5,8 @@ import {
     Container,
     Flex,
     Heading,
-    HStack,
     SimpleGrid,
+    Stack,
     Text
 } from '@chakra-ui/react';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
@@ -36,17 +36,15 @@ export default function Home({
 }: InferGetServerSidePropsType<typeof getServerSideProps>): JSX.Element {
     return (
         <Layout>
-            <Box m="5%">
+            <Box>
                 <Head>
                     <title>Create Next App</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-
-                <Heading>Test</Heading>
-                <Box marginBottom="10%" marginX="5%">
-                    <div style={{ justifyItems: 'center', marginLeft: '25%' }}>
+                <Box marginBottom="10%" marginX="5%" paddingTop="10em">
+                    <Box justifyItems="center" marginLeft={['0', '0', '5em', '30%']}>
                         <Image src="/logo.png" alt="Logo" width={500} height={300} />
-                    </div>
+                    </Box>
                     <Heading
                         textAlign="center"
                         fontSize={{ base: '4xl', md: '6xl' }}
@@ -56,7 +54,11 @@ export default function Home({
                         ">
                         Team HackOverflow
                     </Heading>
-                    <HStack mt="10" spacing="4" justify="center">
+                    <Stack
+                        direction={{ base: 'column', md: 'row' }}
+                        mt="10"
+                        spacing="4"
+                        justify="center">
                         <Button bg="#ebf8ff" variant="ghost" colorScheme="blue" size="lg">
                             Covid Visualized
                         </Button>
@@ -67,11 +69,11 @@ export default function Home({
                         <Button bg="#F0FFF4" variant="ghost" colorScheme="green" size="lg">
                             Sentiment Analysis
                         </Button>
-                    </HStack>
+                    </Stack>
                 </Box>
-                <Box mt={10}>
+                <Box m={10}>
                     <Heading textAlign="center">Meet the Team</Heading>
-                    <SimpleGrid mt={5} columns={{ base: 2, md: 3 }} spacing={10}>
+                    <SimpleGrid mt={5} columns={{ base: 1, md: 3 }} spacing={10}>
                         {data.members.map((val, index) => (
                             <a href={val.url} key={index}>
                                 <Flex borderWidth="1px" borderRadius="lg" direction="column" p={5}>
@@ -87,9 +89,9 @@ export default function Home({
                         ))}
                     </SimpleGrid>
                 </Box>
-                <Box mt={10}>
+                <Box m={10}>
                     <Heading textAlign="center">Our Work!</Heading>
-                    <SimpleGrid mt={5} columns={2} spacing={10}>
+                    <SimpleGrid mt={5} columns={{ base: 1, md: 2 }} spacing={10}>
                         {data.repos.map((val, index) => (
                             <Flex
                                 key={index}
