@@ -7,4 +7,8 @@
     <url>
         <loc>https://thea-ivory.vercel.app/_app</loc>
     </url>
+
+    <url>
+        <loc>https://thea-ivory.vercel.app/_document</loc>
+    </url>
 </urlset>
