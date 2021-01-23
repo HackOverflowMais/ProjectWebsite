@@ -10,6 +10,9 @@ export default class MyDocument extends NextDocument {
     render() {
         return (
             <Html lang="en" prefix="og: https://ogp.me/ns#">
+                <Head>
+                    <meta />
+                </Head>
                 <body>
                     <ColorModeScript />
                     <Main />
