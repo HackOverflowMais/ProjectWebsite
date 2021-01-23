@@ -99,7 +99,9 @@ export default function Home({
                                 p={5}>
                                 <Flex direction="row" marginBottom={3}>
                                     <FiBook style={{ marginTop: '0.25em' }} />
-                                    <a href={val.url} style={{ color: '#0363cf', marginLeft: '0.5em' }}>
+                                    <a
+                                        href={val.url}
+                                        style={{ color: '#0363cf', marginLeft: '0.5em' }}>
                                         <Heading
                                             _hover={{ borderBottom: '2px' }}
                                             fontWeight="bold"
@@ -123,7 +125,9 @@ export default function Home({
                                     />
                                     <Text>{val.primaryLanguage.name}</Text>
                                     <Flex ml={8}>
-                                        <FiStar style={{ marginTop: '0.25em', marginRight: '0.25em' }} />
+                                        <FiStar
+                                            style={{ marginTop: '0.25em', marginRight: '0.25em' }}
+                                        />
                                         <Text>{val.stargazerCount}</Text>
                                     </Flex>
                                 </Flex>
