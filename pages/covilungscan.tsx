@@ -46,7 +46,7 @@ export default function CoviPage() {
                 {loading ? (
                     <Spinner />
                 ) : output ? (
-                    <Text color="white" bg="black" fontFamily="monospace">
+                    <Text margin={10} color="white" bg="black" fontFamily="monospace">
                         Covid is {JSON.stringify(output)}
                     </Text>
                 ) : (
@@ -73,7 +73,7 @@ export default function CoviPage() {
                     <Text>Please Select a File!</Text>
                 )}
                 <div>
-                    <Button isLoading={loading} onClick={handleSubmission}>
+                    <Button size="xl" margin={10} isLoading={loading} onClick={handleSubmission}>
                         Submit
                     </Button>
                 </div>

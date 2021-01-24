@@ -38,14 +38,14 @@ export default function Sentiment() {
                 {loading ? (
                     <Spinner />
                 ) : output ? (
-                    <Text color="white" bg="black" fontFamily="monospace">
+                    <Text margin={10} color="white" bg="black" fontFamily="monospace">
                         Analysis {JSON.stringify(output)}
                     </Text>
                 ) : (
                     <br />
                 )}
-                <Input value={input} onChange={handleChange} />
-                <Button isLoading={loading} onClick={handleSubmission}>
+                <Input margin={10} value={input} onChange={handleChange} />
+                <Button margin={10} size="xl" isLoading={loading} onClick={handleSubmission}>
                     Submit
                 </Button>
             </Container>

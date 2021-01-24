@@ -12,6 +12,7 @@ import {
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiBook, FiStar } from 'react-icons/fi';
 
 import Layout from '../components/layout';
@@ -59,16 +60,21 @@ export default function Home({
                         mt="10"
                         spacing="4"
                         justify="center">
-                        <Button bg="#ebf8ff" variant="ghost" colorScheme="blue" size="lg">
-                            Covid Visualized
-                        </Button>
-
-                        <Button bg="#E6FFFA" variant="ghost" colorScheme="teal" size="lg">
-                            Lung Scans
-                        </Button>
-                        <Button bg="#F0FFF4" variant="ghost" colorScheme="green" size="lg">
-                            Sentiment Analysis
-                        </Button>
+                        <Link href="/visualization">
+                            <Button bg="#ebf8ff" variant="ghost" colorScheme="blue" size="lg">
+                                Covid Visualized
+                            </Button>
+                        </Link>
+                        <Link href="covilungscan">
+                            <Button bg="#E6FFFA" variant="ghost" colorScheme="teal" size="lg">
+                                Lung Scans
+                            </Button>
+                        </Link>
+                        <Link href="sentiment">
+                            <Button bg="#F0FFF4" variant="ghost" colorScheme="green" size="lg">
+                                Sentiment Analysis
+                            </Button>
+                        </Link>
                     </Stack>
                 </Box>
                 <Box m={10}>
