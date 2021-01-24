@@ -7,12 +7,12 @@ export default function Visualization() {
     return (
         <Layout>
             <Heading textAlign="center">Covid Visualized</Heading>
-            <Box paddingTop="20%">
+            <Box paddingTop={{ base: '20%', md: '10%' }}>
                 <iframe
                     title="Visualization"
                     src="https://hackoverflowmais.github.io/simulate-covid/"
                     width="100%"
-                    height="1000px"
+                    height="1500px"
                 />
             </Box>
             <Flex justify="center" mt={10} m={10} direction={{ base: 'column', md: 'row' }}>
@@ -22,7 +22,7 @@ export default function Visualization() {
                         src="/newplot.png"
                         alt="top 10 confirmed cases"
                         height={500}
-                        width={500}
+                        width={700}
                     />
                 </Flex>
                 <Flex direction="column" margin={5}>
@@ -31,7 +31,7 @@ export default function Visualization() {
                         src="/plot2.png"
                         alt="top 10 confirmed case by state Indias"
                         height={500}
-                        width={500}
+                        width={700}
                     />
                 </Flex>
             </Flex>

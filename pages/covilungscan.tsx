@@ -40,7 +40,7 @@ export default function CoviPage() {
     };
     return (
         <Layout>
-            <Container paddingTop="20%">
+            <Container paddingTop={{ base: '30%', md: '20%' }}>
                 <Heading m={10}>Upload Scan</Heading>
                 <input type="file" name="file" onChange={changeHandler} />
                 {loading ? (
