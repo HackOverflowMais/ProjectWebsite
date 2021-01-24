@@ -38,7 +38,7 @@ export default function Sentiment() {
                 {loading ? (
                     <Spinner />
                 ) : output ? (
-                    <Text color="white" fontFamily="white">
+                    <Text color="white" bg="black" fontFamily="monospace">
                         Analysis {JSON.stringify(output)}
                     </Text>
                 ) : (

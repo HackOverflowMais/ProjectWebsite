@@ -46,7 +46,7 @@ export default function CoviPage() {
                 {loading ? (
                     <Spinner />
                 ) : output ? (
-                    <Text color="white" fontFamily="white" bg="black">
+                    <Text color="white" bg="black" fontFamily="monospace">
                         Covid is {JSON.stringify(output)}
                     </Text>
                 ) : (

@@ -65,14 +65,14 @@ const MenuLinks = ({ isOpen }) => {
                 <MenuItem to="/" isLast={false}>
                     Home
                 </MenuItem>
-                <MenuItem to="/how" isLast={false}>
+                <MenuItem to="/covilungscan" isLast={false}>
                     Lung Classifier
                 </MenuItem>
-                <MenuItem to="/faetures" isLast={false}>
-                    Visualization
-                </MenuItem>
-                <MenuItem to="/pricing" isLast={false}>
+                <MenuItem to="/sentiment" isLast={false}>
                     Sentiment Analysis
+                </MenuItem>
+                <MenuItem to="/visualization" isLast={false}>
+                   Visualization
                 </MenuItem>
             </Stack>
         </Box>
