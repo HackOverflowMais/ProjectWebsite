@@ -19,7 +19,7 @@ export default function CoviPage() {
 
         formData.append('File', selectedFile);
         SetLoading(true);
-        fetch('http://d8769c0f6c3a.ngrok.io/image', {
+        fetch('http://62597b469fb8.ngrok.io/image', {
             method: 'POST',
             body: formData
         })
