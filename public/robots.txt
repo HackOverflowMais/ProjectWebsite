@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hackoverflow-omega.vercel.app/sitemap.xml

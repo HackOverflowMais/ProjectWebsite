@@ -43,7 +43,7 @@ export default function Home({
                 </Head>
                 <Box marginBottom="10%" marginX="5%" paddingTop="10em">
                     <Box justifyItems="center" marginLeft={['0', '0', '5em', '30%']}>
-                        <Image src="/logo.png" alt="Logo" width={500} height={300} />
+                        <Image src="/logo.png" alt="Logo" width={456} height={547} />
                     </Box>
                     <Heading
                         textAlign="center"
@@ -83,7 +83,7 @@ export default function Home({
                             <a href={val.url} key={index}>
                                 <Flex borderWidth="1px" borderRadius="lg" direction="column" p={5}>
                                     <Flex direction="row" marginBottom={3}>
-                                        <Avatar mr={5} src={val.avatarUrl} />
+                                        <Avatar alt={val.name} mr={5} src={val.avatarUrl} />
                                         <Text mt={1} justifyContent="center">
                                             {val.name}
                                         </Text>

@@ -9,6 +9,7 @@ module.exports = withPWA(
             if (isServer) {
                 require('./lib/generate-sitemap');
             }
+
             return config;
         }
     })
