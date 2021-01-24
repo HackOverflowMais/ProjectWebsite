@@ -8,7 +8,6 @@ module.exports = withSass({
         if (isServer) {
             require('./lib/generate-sitemap');
         }
-
         return config;
     }
 });

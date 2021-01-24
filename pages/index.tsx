@@ -18,7 +18,7 @@ import Layout from '../components/layout';
 import { Github } from '../models/github';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const res = await fetch('http://localhost:3000/api/github');
+    const res = await fetch('https://hackoverflow-omega.vercel.app/api/github');
     const data: Github = await res.json();
     if (!data) {
         return {
