@@ -13,7 +13,7 @@ export default function Sentiment() {
 
     const handleSubmission = () => {
         SetLoading(true);
-        fetch(`http://62597b469fb8.ngrok.io/sentence?sentence=${input}`, {
+        fetch(`http://83268a9bbdd1.ngrok.io/sentence?sentence=${input}`, {
             method: 'GET'
         })
             .then((response) => response.json())
@@ -38,7 +38,9 @@ export default function Sentiment() {
                 {loading ? (
                     <Spinner />
                 ) : output ? (
-                    <Text bg="teal.200">Analysis {JSON.stringify(output)}</Text>
+                    <Text color="white" fontFamily="white">
+                        Analysis {JSON.stringify(output)}
+                    </Text>
                 ) : (
                     <br />
                 )}

@@ -19,7 +19,7 @@ export default function CoviPage() {
 
         formData.append('File', selectedFile);
         SetLoading(true);
-        fetch('http://62597b469fb8.ngrok.io/image', {
+        fetch('http://83268a9bbdd1.ngrok.io/image', {
             method: 'POST',
             body: formData
         })
@@ -46,7 +46,9 @@ export default function CoviPage() {
                 {loading ? (
                     <Spinner />
                 ) : output ? (
-                    <Text bg="teal.200">Covid is {JSON.stringify(output)}</Text>
+                    <Text color="white" fontFamily="white" bg="black">
+                        Covid is {JSON.stringify(output)}
+                    </Text>
                 ) : (
                     <br />
                 )}
