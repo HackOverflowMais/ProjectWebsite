@@ -12,7 +12,7 @@ export default function Visualization() {
                     title="Visualization"
                     src="https://hackoverflowmais.github.io/simulate-covid/"
                     width="100%"
-                    height="1500px"
+                    height="1200px"
                 />
             </Box>
             <Flex justify="center" mt={10} m={10} direction={{ base: 'column', md: 'row' }}>

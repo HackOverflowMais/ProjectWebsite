@@ -35,17 +35,24 @@ export default function Sentiment() {
         <Layout>
             <Container paddingTop={{ base: '30%', md: '30%' }}>
                 <Heading m={10}>Enter Text for Analysis</Heading>
-                {loading ? (
-                    <Spinner />
-                ) : output ? (
-                    <Text margin={10} color="white" bg="black" fontFamily="monospace">
-                        Analysis {JSON.stringify(output)}
-                    </Text>
-                ) : (
-                    <br />
-                )}
+                <Box justifyItems="center">
+                    {loading ? (
+                        <Spinner size="lg" color="teal.200" />
+                    ) : output ? (
+                        <Text margin={10} color="white" bg="black" fontFamily="monospace">
+                            Analysis {JSON.stringify(output)}
+                        </Text>
+                    ) : (
+                        <br />
+                    )}
+                </Box>
                 <Input margin={10} value={input} onChange={handleChange} />
-                <Button margin={10} size="lg" isLoading={loading} onClick={handleSubmission}>
+                <Button
+                    colorScheme="blue"
+                    margin={10}
+                    size="lg"
+                    isLoading={loading}
+                    onClick={handleSubmission}>
                     Submit
                 </Button>
             </Container>

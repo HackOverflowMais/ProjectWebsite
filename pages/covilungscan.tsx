@@ -43,15 +43,17 @@ export default function CoviPage() {
             <Container paddingTop={{ base: '30%', md: '20%' }}>
                 <Heading m={10}>Upload Scan</Heading>
                 <input type="file" name="file" onChange={changeHandler} />
-                {loading ? (
-                    <Spinner />
-                ) : output ? (
-                    <Text margin={10} color="white" bg="black" fontFamily="monospace">
-                        Covid is {JSON.stringify(output)}
-                    </Text>
-                ) : (
-                    <br />
-                )}
+                <Box justifyItems="center">
+                    {loading ? (
+                        <Spinner />
+                    ) : output ? (
+                        <Text margin={10} color="white" bg="black" fontFamily="monospace">
+                            Covid is {JSON.stringify(output)}
+                        </Text>
+                    ) : (
+                        <br />
+                    )}
+                </Box>
                 {selectedFile !== undefined && selectedFile !== null ? (
                     isSelected ? (
                         <div>
@@ -73,7 +75,12 @@ export default function CoviPage() {
                     <Text>Please Select a File!</Text>
                 )}
                 <div>
-                    <Button size="lg" margin={10} isLoading={loading} onClick={handleSubmission}>
+                    <Button
+                        colorScheme="green"
+                        size="lg"
+                        margin={10}
+                        isLoading={loading}
+                        onClick={handleSubmission}>
                         Submit
                     </Button>
                 </div>
