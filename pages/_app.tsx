@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <link rel="manifest" href="/manifest.json" />
+                <link rel="icon" href="/logo.ico" />
                 <meta name="theme-color" content="#9F7AEA" />
                 <link
                     rel="apple-touch-startup-image"

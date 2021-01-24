@@ -70,7 +70,7 @@ export default function Home({
                             </Button>
                         </Link>
                         <Link href="sentiment">
-                            <Button bg="#F0FFF4" variant="ghost" colorScheme="green" size="lg">
+                            <Button bg="green.100" variant="ghost" colorScheme="green" size="lg">
                                 Sentiment Analysis
                             </Button>
                         </Link>
@@ -83,7 +83,7 @@ export default function Home({
                             <a href={val.url} key={index}>
                                 <Flex borderWidth="1px" borderRadius="lg" direction="column" p={5}>
                                     <Flex direction="row" marginBottom={3}>
-                                        <Avatar alt={val.name} mr={5} src={val.avatarUrl} />
+                                        <Avatar name={val.name} mr={5} src={val.avatarUrl} />
                                         <Text mt={1} justifyContent="center">
                                             {val.name}
                                         </Text>

@@ -1,6 +1,7 @@
 {
     "name": "HackOverflow",
     "short_name": "HackOverflow",
+    "theme_color": "#000",
     "background_color": "#fff",
     "display": "fullscreen",
     "orientation": "potrait",
