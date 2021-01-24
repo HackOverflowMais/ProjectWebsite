@@ -1,0 +1,16 @@
+{
+    "name": "HackOverflow",
+    "short_name": "HackOverflow",
+    "background_color": "#fff",
+    "display": "fullscreen",
+    "orientation": "potrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src":"logo.png",
+            "type":"image/png"
+        }
+    ],
+    "splash_pages": null
+}

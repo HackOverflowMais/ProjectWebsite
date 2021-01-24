@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://thea-ivory.vercel.app/covilungscan</loc>
+        <loc>https://hackoverflow-omega.vercel.app/covilungscan</loc>
     </url>
 
     <url>
-        <loc>https://thea-ivory.vercel.app</loc>
+        <loc>https://hackoverflow-omega.vercel.app</loc>
     </url>
 
     <url>
-        <loc>https://thea-ivory.vercel.app/sentiment</loc>
+        <loc>https://hackoverflow-omega.vercel.app/sentiment</loc>
     </url>
 
     <url>
-        <loc>https://thea-ivory.vercel.app/_app</loc>
+        <loc>https://hackoverflow-omega.vercel.app/visualization</loc>
     </url>
 
     <url>
-        <loc>https://thea-ivory.vercel.app/_document</loc>
+        <loc>https://hackoverflow-omega.vercel.app/_app</loc>
+    </url>
+
+    <url>
+        <loc>https://hackoverflow-omega.vercel.app/_document</loc>
     </url>
 </urlset>

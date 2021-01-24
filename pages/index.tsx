@@ -39,8 +39,7 @@ export default function Home({
         <Layout>
             <Box>
                 <Head>
-                    <title>Create Next App</title>
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/logo.ico" />
                 </Head>
                 <Box marginBottom="10%" marginX="5%" paddingTop="10em">
                     <Box justifyItems="center" marginLeft={['0', '0', '5em', '30%']}>
