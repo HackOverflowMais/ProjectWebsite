@@ -45,7 +45,7 @@ export default function CoviPage() {
                 <input type="file" name="file" onChange={changeHandler} />
                 <Box justifyItems="center">
                     {loading ? (
-                        <Spinner />
+                        <Spinner size="lg" color="teal.200" />
                     ) : output ? (
                         <Text margin={10} color="white" bg="black" fontFamily="monospace">
                             Covid is {JSON.stringify(output)}
