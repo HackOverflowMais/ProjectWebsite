@@ -7,7 +7,7 @@ export default function CoviPage() {
     const [selectedFile, setSelectedFile] = useState(null);
     const [isSelected, setIsSelected] = useState(false);
     const [loading, SetLoading] = useState(false);
-    const [output, SetOutput] = useState();
+    const [output, SetOutput] = useState(null);
 
     const changeHandler = (event) => {
         setSelectedFile(event.target.files[0]);
@@ -40,15 +40,15 @@ export default function CoviPage() {
     };
     return (
         <Layout>
-            <Container paddingTop={{ base: '30%', md: '20%' }}>
+            <Container paddingTop={{ base: '30%', md: '15%' }}>
                 <Heading m={10}>Upload Scan</Heading>
                 <input type="file" name="file" onChange={changeHandler} />
-                <Box justifyItems="center">
+                <Box margin={10} justifyItems="center">
                     {loading ? (
                         <Spinner size="lg" color="teal.200" />
-                    ) : output ? (
+                    ) : output !== null ? (
                         <Text margin={10} color="white" bg="black" fontFamily="monospace">
-                            Covid is {JSON.stringify(output)}
+                            Covid Prediction: {output.covid}
                         </Text>
                     ) : (
                         <br />
@@ -57,10 +57,16 @@ export default function CoviPage() {
                 {selectedFile !== undefined && selectedFile !== null ? (
                     isSelected ? (
                         <div>
-                            <Box p={5}>
-                                <p>Filename: {selectedFile.name}</p>
-                                <p>Filetype: {selectedFile.type}</p>
-                                <p>Size in bytes: {selectedFile.size}</p>
+                            <Box p={5} borderWidth="1px" borderRadius="lg">
+                                <Text>
+                                    <strong>Filename:</strong> {selectedFile.name}
+                                </Text>
+                                <Text>
+                                    <strong>Filetype:</strong> {selectedFile.type}
+                                </Text>
+                                <Text>
+                                    <strong>Size in bytes:</strong> {selectedFile.size}
+                                </Text>
                                 <Image
                                     height={150}
                                     width={150}

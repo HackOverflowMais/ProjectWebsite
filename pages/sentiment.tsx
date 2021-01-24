@@ -33,9 +33,9 @@ export default function Sentiment() {
     };
     return (
         <Layout>
-            <Container paddingTop={{ base: '30%', md: '30%' }}>
+            <Container paddingTop={{ base: '30%', md: '15%' }}>
                 <Heading m={10}>Enter Text for Analysis</Heading>
-                <Box justifyItems="center">
+                <Box margin={10} justifyItems="center">
                     {loading ? (
                         <Spinner size="lg" color="teal.200" />
                     ) : output ? (
