@@ -45,7 +45,7 @@ export default function Sentiment() {
                     <br />
                 )}
                 <Input margin={10} value={input} onChange={handleChange} />
-                <Button margin={10} size="xl" isLoading={loading} onClick={handleSubmission}>
+                <Button margin={10} size="lg" isLoading={loading} onClick={handleSubmission}>
                     Submit
                 </Button>
             </Container>

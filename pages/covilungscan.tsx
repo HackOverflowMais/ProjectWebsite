@@ -73,7 +73,7 @@ export default function CoviPage() {
                     <Text>Please Select a File!</Text>
                 )}
                 <div>
-                    <Button size="xl" margin={10} isLoading={loading} onClick={handleSubmission}>
+                    <Button size="lg" margin={10} isLoading={loading} onClick={handleSubmission}>
                         Submit
                     </Button>
                 </div>

@@ -10,7 +10,7 @@ export default function Visualization() {
                     title="Visualization"
                     src="https://hackoverflowmais.github.io/simulate-covid/"
                     width="100%"
-                    height="100%"
+                    height="500px"
                 />
             </Box>
         </Layout>
