@@ -19,7 +19,7 @@ export default function CoviPage() {
 
         formData.append('File', selectedFile);
         SetLoading(true);
-        fetch('https://83268a9bbdd1.ngrok.io/image', {
+        fetch('https://hackoverflow-backend.herokuapp.com/image', {
             method: 'POST',
             body: formData
         })
