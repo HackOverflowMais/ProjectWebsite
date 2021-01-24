@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Layout from '../components/layout';
 
 export default function CoviPage() {
-    const [selectedFile, setSelectedFile] = useState();
+    const [selectedFile, setSelectedFile] = useState(null);
     const [isSelected, setIsSelected] = useState(false);
     const [loading, SetLoading] = useState(false);
     const [output, SetOutput] = useState();
@@ -50,19 +50,23 @@ export default function CoviPage() {
                 ) : (
                     <br />
                 )}
-                {isSelected ? (
-                    <div>
-                        <Box p={5}>
-                            <p>Filename: {selectedFile.name}</p>
-                            <p>Filetype: {selectedFile.type}</p>
-                            <p>Size in bytes: {selectedFile.size}</p>
-                            <Image
-                                height={150}
-                                width={150}
-                                src={URL.createObjectURL(selectedFile)}
-                            />
-                        </Box>
-                    </div>
+                {selectedFile !== undefined && selectedFile !== null ? (
+                    isSelected ? (
+                        <div>
+                            <Box p={5}>
+                                <p>Filename: {selectedFile.name}</p>
+                                <p>Filetype: {selectedFile.type}</p>
+                                <p>Size in bytes: {selectedFile.size}</p>
+                                <Image
+                                    height={150}
+                                    width={150}
+                                    src={URL.createObjectURL(selectedFile)}
+                                />
+                            </Box>
+                        </div>
+                    ) : (
+                        <Text>Please Select a File!</Text>
+                    )
                 ) : (
                     <Text>Please Select a File!</Text>
                 )}
