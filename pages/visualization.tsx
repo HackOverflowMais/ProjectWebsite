@@ -15,14 +15,14 @@ export default function Visualization() {
                     height="1000px"
                 />
             </Box>
-            <Flex mt={10} m={10} direction={{ base: 'column', md: 'row' }}>
+            <Flex justify="center" mt={10} m={10} direction={{ base: 'column', md: 'row' }}>
                 <Flex margin={5} direction="column">
                     <Heading size="md">Countries with the Most covid cases</Heading>
                     <Image
                         src="/newplot.png"
                         alt="top 10 confirmed cases"
-                        height={400}
-                        width={400}
+                        height={500}
+                        width={500}
                     />
                 </Flex>
                 <Flex direction="column" margin={5}>
@@ -30,8 +30,8 @@ export default function Visualization() {
                     <Image
                         src="/plot2.png"
                         alt="top 10 confirmed case by state Indias"
-                        height={400}
-                        width={400}
+                        height={500}
+                        width={500}
                     />
                 </Flex>
             </Flex>
