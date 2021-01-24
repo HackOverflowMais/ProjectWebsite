@@ -47,8 +47,9 @@ export default function CoviPage() {
                     {loading ? (
                         <Spinner size="lg" color="teal.200" />
                     ) : output !== null ? (
-                        <Text margin={10} color="white" bg="black" fontFamily="monospace">
-                            Covid Prediction: {output.covid}
+                        <Text margin={10} fontFamily="monospace">
+                            Covid Prediction:{' '}
+                            {JSON.stringify(output).split(':')[1].replace('}', '')}
                         </Text>
                     ) : (
                         <br />
