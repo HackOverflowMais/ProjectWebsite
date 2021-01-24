@@ -13,7 +13,7 @@ export default function Sentiment() {
 
     const handleSubmission = () => {
         SetLoading(true);
-        fetch(`http://83268a9bbdd1.ngrok.io/sentence?sentence=${input}`, {
+        fetch(`https://83268a9bbdd1.ngrok.io/sentence?sentence=${input}`, {
             method: 'GET'
         })
             .then((response) => response.json())
