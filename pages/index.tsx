@@ -1,14 +1,4 @@
-import {
-    Avatar,
-    Box,
-    Button,
-    Container,
-    Flex,
-    Heading,
-    SimpleGrid,
-    Stack,
-    Text
-} from '@chakra-ui/react';
+import { Avatar, Box, Button, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';

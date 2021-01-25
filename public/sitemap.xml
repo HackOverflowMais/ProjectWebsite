@@ -15,12 +15,4 @@
     <url>
         <loc>https://hackoverflow-omega.vercel.app/visualization</loc>
     </url>
-
-    <url>
-        <loc>https://hackoverflow-omega.vercel.app/_app</loc>
-    </url>
-
-    <url>
-        <loc>https://hackoverflow-omega.vercel.app/_document</loc>
-    </url>
 </urlset>
